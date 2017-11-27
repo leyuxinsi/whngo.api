@@ -3395,3 +3395,60 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1511799388.632
     'REQUEST_TIME' => 1511799388
 ]
+2017-11-28 00:46:49 [127.0.0.1][-][-][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "app_inbox.html".' in D:\wamp\www\whngo.api\vendor\yiisoft\yii2\base\Module.php:460
+Stack trace:
+#0 D:\wamp\www\whngo.api\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('app_inbox.html', Array)
+#1 D:\wamp\www\whngo.api\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 D:\wamp\www\whngo.api\backend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message '页面未找到。' in D:\wamp\www\whngo.api\vendor\yiisoft\yii2\web\Application.php:99
+Stack trace:
+#0 D:\wamp\www\whngo.api\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 D:\wamp\www\whngo.api\backend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2017-11-28 00:46:49 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    'layout-style-option' => 'rounded'
+]
+
+$_SERVER = [
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'admin.welfare.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_REFERER' => 'http://admin.welfare.com/'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'HTTP_COOKIE' => 'layout-style-option=rounded'
+    'PATH' => 'C:\\Program Files (x86)\\Common Files\\NetSarang;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\nodejs\\;C:\\Program Files\\Java\\jdk1.8.0_40\\bin;C:\\Program Files\\Java\\jdk1.8.0_40\\jre\\bin;D:\\wamp\\bin\\php\\php5.5.12;C:\\Program Files\\MongoDB\\Server\\3.2\\bin;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files\\TortoiseSVN\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;C:\\Program Files\\TortoiseGit\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win32) PHP/5.5.12 Server at admin.welfare.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win32) PHP/5.5.12'
+    'SERVER_NAME' => 'admin.welfare.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www/whngo.api/backend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www/whngo.api/backend/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host5.example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/whngo.api/backend/web/index.php'
+    'REMOTE_PORT' => '64191'
+    'REDIRECT_URL' => '/app_inbox.html'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/app_inbox.html'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1511801209.632
+    'REQUEST_TIME' => 1511801209
+]
