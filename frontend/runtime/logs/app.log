@@ -1,0 +1,178 @@
+2017-10-16 11:53:33 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'yanying'@'localhost' (using password: YES)' in D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Connection.php:603
+Stack trace:
+#0 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Connection.php(603): PDO->__construct('mysql:host=127....', 'yanying', 'YanYing.passwor...', NULL)
+#1 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Connection.php(545): yii\db\Connection->createPdoInstance()
+#2 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#3 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#4 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#5 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('<span class="st...')
+#6 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#7 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#8 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#9 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#10 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#11 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#12 D:\wamp\www\whngo\frontend\controllers\SiteController.php(27): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#13 [internal function]: frontend\controllers\SiteController->actionIndex()
+#14 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#15 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#16 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#17 D:\wamp\www\whngo\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#18 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#19 D:\wamp\www\whngo\frontend\web\index.php(18): yii\base\Application->run()
+#20 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'yanying'@'localhost' (using password: YES)' in D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Connection.php:550
+Stack trace:
+#0 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Connection.php(864): yii\db\Connection->open()
+#1 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Connection.php(851): yii\db\Connection->getMasterPdo()
+#2 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Schema.php(480): yii\db\Connection->getSlavePdo()
+#3 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Connection.php(760): yii\db\Schema->quoteValue('<span class="st...')
+#4 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Command.php(175): yii\db\Connection->quoteValue('<span class="st...')
+#5 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Command.php(869): yii\db\Command->getRawSql()
+#6 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Command.php(376): yii\db\Command->queryInternal('<span class="st...', '<span class="ke...')
+#7 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\Query.php(247): yii\db\Command->queryOne()
+#8 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\ActiveQuery.php(295): yii\db\Query->one('<span class="ke...')
+#9 D:\wamp\www\whngo\vendor\yiisoft\yii2\db\BaseActiveRecord.php(107): yii\db\ActiveQuery->one()
+#10 D:\wamp\www\whngo\frontend\controllers\SiteController.php(27): yii\db\BaseActiveRecord::findOne('[<span class="s...')
+#11 [internal function]: frontend\controllers\SiteController->actionIndex()
+#12 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[]')
+#13 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams('[]')
+#14 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction('<span class="st...', '[]')
+#15 D:\wamp\www\whngo\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction('<span class="st...', '[]')
+#16 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#17 D:\wamp\www\whngo\frontend\web\index.php(18): yii\base\Application->run()
+#18 {main}
+Additional Information:
+
+2017-10-16 11:53:33 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'api.welfare.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_111\\jre\\bin;C:\\Users\\yanyi\\AppData\\Local\\Programs\\Python\\Python36-32;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at api.welfare.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'api.welfare.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www/whngo/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www/whngo/frontend/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/whngo/frontend/web/index.php'
+    'REMOTE_PORT' => '58169'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508126013.228
+    'REQUEST_TIME' => 1508126013
+]
+2017-10-16 11:54:13 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\wamp\www\whngo\frontend\controllers\SiteController.php:27
+Stack trace:
+#0 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{D:\wamp\www\whngo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#3 D:\wamp\www\whngo\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction()
+#4 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 D:\wamp\www\whngo\frontend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-10-16 11:54:13 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'api.welfare.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_111\\jre\\bin;C:\\Users\\yanyi\\AppData\\Local\\Programs\\Python\\Python36-32;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at api.welfare.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'api.welfare.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www/whngo/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www/whngo/frontend/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/whngo/frontend/web/index.php'
+    'REMOTE_PORT' => '58228'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508126053.378
+    'REQUEST_TIME' => 1508126053
+]
+2017-10-16 12:36:33 [127.0.0.1][-][-][error][yii\base\ErrorException:8] exception 'yii\base\ErrorException' with message 'Trying to get property of non-object' in D:\wamp\www\whngo\frontend\controllers\SiteController.php:27
+Stack trace:
+#0 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\InlineAction.php(55): ::call_user_func_array:{D:\wamp\www\whngo\vendor\yiisoft\yii2\base\InlineAction.php:55}()
+#1 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Controller.php(154): yii\base\InlineAction->runWithParams()
+#2 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Module.php(454): yii\base\Controller->runAction()
+#3 D:\wamp\www\whngo\vendor\yiisoft\yii2\web\Application.php(87): yii\base\Module->runAction()
+#4 D:\wamp\www\whngo\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest()
+#5 D:\wamp\www\whngo\frontend\web\index.php(18): yii\base\Application->run()
+#6 {main}
+2017-10-16 12:36:33 [127.0.0.1][-][-][info][application] $_SERVER = [
+    'HTTP_HOST' => 'api.welfare.com'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8'
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\windows\\system32;C:\\windows;C:\\windows\\System32\\Wbem;C:\\windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;D:\\wamp\\bin\\php\\php5.5.12;C:\\ProgramData\\ComposerSetup\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_111\\bin;C:\\Program Files (x86)\\Java\\jdk1.8.0_111\\jre\\bin;C:\\Users\\yanyi\\AppData\\Local\\Programs\\Python\\Python36-32;C:\\Program Files\\nodejs\\;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\Git\\cmd;C:\\Program Files\\TortoiseSVN\\bin;C:\\WINDOWS\\system32\\config\\systemprofile\\AppData\\Local\\Microsoft\\WindowsApps'
+    'SystemRoot' => 'C:\\WINDOWS'
+    'COMSPEC' => 'C:\\WINDOWS\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\WINDOWS'
+    'SERVER_SIGNATURE' => '<address>Apache/2.4.9 (Win64) PHP/5.5.12 Server at api.welfare.com Port 80</address>
+'
+    'SERVER_SOFTWARE' => 'Apache/2.4.9 (Win64) PHP/5.5.12'
+    'SERVER_NAME' => 'api.welfare.com'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'DOCUMENT_ROOT' => 'D:/wamp/www/whngo/frontend/web'
+    'REQUEST_SCHEME' => 'http'
+    'CONTEXT_PREFIX' => ''
+    'CONTEXT_DOCUMENT_ROOT' => 'D:/wamp/www/whngo/frontend/web'
+    'SERVER_ADMIN' => 'webmaster@dummy-host2.example.com'
+    'SCRIPT_FILENAME' => 'D:/wamp/www/whngo/frontend/web/index.php'
+    'REMOTE_PORT' => '60988'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'REQUEST_URI' => '/'
+    'SCRIPT_NAME' => '/index.php'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1508128593.685
+    'REQUEST_TIME' => 1508128593
+]
