@@ -5,7 +5,7 @@
  * Date: 2016/7/27
  * Time: 15:45
  */
-namespace frontend\controllers;
+namespace backend\controllers;
 
 use common\helpers\Json;
 use yii\web\Controller;

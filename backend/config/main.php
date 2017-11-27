@@ -10,7 +10,7 @@ return [
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'controllerNamespace' => 'frontend\controllers',
+    'controllerNamespace' => 'backend\controllers',
     'components' => [
         'request' => [
             'csrfParam' => '_csrf-frontend',
@@ -22,19 +22,19 @@ return [
             'identityCookie' => [
                 'domain' => '.isuyue.cn',
                 'path' => '/',
-                'name' => '_identity-frontend',
+                'name' => '_identity-backend',
                 'httpOnly' => true
             ],
         ],
         'session' => [
             // this is the name of the session cookie used for login on the frontend
-            'name' => 'advanced-frontend',
-            'cookieParams' => [
+            'name' => 'advanced-backend',
+            /*'cookieParams' => [
                 'domain' => '.isuyue.cn',
                 'lifetime' => 0,
                 'httpOnly' => true,
                 'path' => '/',
-            ],
+            ],*/
         ],
         'log' => [
             'traceLevel' => YII_DEBUG ? 3 : 0,
