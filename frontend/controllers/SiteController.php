@@ -8,6 +8,7 @@ use common\models\ClassLevel;
 use common\models\Coach;
 use common\models\Config;
 use common\models\Feed;
+use common\models\FriendLinks;
 use common\models\LoginCode;
 use common\models\News;
 use common\models\School;
@@ -56,12 +57,34 @@ class SiteController extends BaseController
         // 最新评论数据
         $comment = Support::findLastSupport();
 
+        $sign_enter = Config::findOne(['conf_key'=>'signInEnter'])->conf_value;
+
         $this->returnSuccess([
             'end_time'=>$end_time,
             'banner'=>$banner,
             'project_cover'=>$project_cover,
             'feed'=>$feed,
             'comment'=>$comment,
+            'sign_enter'=>'http://wx.whngo.com/Public/upload/'.$sign_enter,
+        ]);
+    }
+
+    public function actionFriendLinks()
+    {
+        // 检索出友情链接
+        $friend_links = FriendLinks::find()->asArray()->all();
+
+        $links_group = '';
+        foreach ($friend_links as $value){
+            $website_url = $value['website_url'];
+            if(substr($website_url,0,4)!='http'){
+                $website_url = "http://".$website_url;
+            }
+            $links_group .= '<a href="'.$website_url.'">'.$value['name'].'</a>';
+        }
+
+        $this->returnSuccess([
+            'friend_links'=>$links_group
         ]);
     }
 
