@@ -55,6 +55,6 @@ class Feed extends BaseModel
             'content',
             'create_time',
             'img_url',
-        ])->where(['status'=>self::STATUS_ACTIVE])->limit($limit)->asArray()->all();
+        ])->where(['status'=>self::STATUS_ACTIVE])->orderBy('create_time desc')->limit($limit)->asArray()->all();
     }
 }
